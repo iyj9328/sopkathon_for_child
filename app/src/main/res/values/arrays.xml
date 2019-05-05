@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="category_list">
+        <item>가족</item>
+        <item>공부</item>
+        <item>사랑</item>
+        <item>친구</item>
+        <item>기분</item>
+        <item>나</item>
+    </string-array>
+
+</resources>
+
