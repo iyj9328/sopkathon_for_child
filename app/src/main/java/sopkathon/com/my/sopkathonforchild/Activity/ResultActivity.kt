@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.View
 import kotlinx.android.synthetic.main.activity_result.*
 import sopkathon.com.my.sopkathonforchild.Adapter.QuestionListAdapter
 import sopkathon.com.my.sopkathonforchild.Data.Question
@@ -35,6 +36,8 @@ class ResultActivity : AppCompatActivity() {
         rv_question_all.layoutManager = lm
         //rv_question_all.setHasFixedSize(true)
 
-        //aaaaaaaa
+
     }
+
+
 }
