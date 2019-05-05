@@ -14,7 +14,6 @@ import java.util.concurrent.TimeUnit
 
 
 
-
 class ApplicationController : Application() {
 
     var networkService: NetworkService? = null
