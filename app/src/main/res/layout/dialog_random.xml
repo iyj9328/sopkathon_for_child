@@ -3,22 +3,37 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp"
-    android:gravity="center"
+    android:padding="50dp"
     android:orientation="vertical"
+    android:background="@drawable/bg"
     >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="탐구지"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="00 모험"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#8a8a"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
-        android:padding="10dp">
+        android:orientation="vertical"
+        android:padding="50dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="질문"/>
+            android:text="질문" />
+
         <TextView
             android:id="@+id/txt_dialog1"
             android:layout_width="wrap_content"
@@ -26,23 +41,37 @@
     </LinearLayout>
 
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#8a8a"
-        android:padding="10dp">
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/taxt_box" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="답: "/>
+            android:layout_marginTop="15dp"
+            android:text="   여기다 적어주세요 "/>
 
         <EditText
             android:id="@+id/edit_dialog1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:inputType="text"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_dialog1"
             android:inputType="text"
             android:visibility="visible"/>
+
         <GridLayout
             android:id="@+id/layout_grid"
             android:layout_width="match_parent"
@@ -61,12 +90,13 @@
 
         </GridLayout>
     </LinearLayout>
+
     <Button
         android:id="@+id/btn_dialog1"
         android:background="@drawable/border"
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="확인"/>
+        android:text="탐구완료"/>
 
 </LinearLayout>

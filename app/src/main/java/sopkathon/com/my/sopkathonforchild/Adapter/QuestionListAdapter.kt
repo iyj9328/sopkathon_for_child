@@ -23,15 +23,13 @@ class QuestionListAdapter(val ctx: Context, val dataList:ArrayList<Question>) :R
     override fun onBindViewHolder(p0: Holder, p1: Int) {
 
         p0.category_name.text=dataList[p1].category
-        p0.categoryq.text=dataList[p1].category_question
         p0.question_date.text=dataList[p1].date
         p0.question_name.text=dataList[p1].question
     }
 
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         var category_name=itemView.findViewById(R.id.txt_category) as TextView
-        var categoryq=itemView.findViewById(R.id.txt_categoryq) as TextView
-        var question_name=itemView.findViewById(R.id.txt_question) as TextView
+        var question_name=itemView.findViewById(R.id.txt_cateques) as TextView
         var question_date=itemView.findViewById(R.id.date) as TextView
     }
 
