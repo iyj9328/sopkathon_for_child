@@ -31,11 +31,10 @@ class ResultActivity : AppCompatActivity() {
         questionListAdapter= QuestionListAdapter(this,dataList)
         rv_question_all.adapter=questionListAdapter
 
-
         val lm = LinearLayoutManager(this)
         rv_question_all.layoutManager = lm
         //rv_question_all.setHasFixedSize(true)
 
-
+        //aaaaaaaa
     }
 }
