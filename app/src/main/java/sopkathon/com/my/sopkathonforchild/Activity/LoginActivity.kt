@@ -1,4 +1,4 @@
-package sopkathon.com.my.sopkathonforchild.Network
+package sopkathon.com.my.sopkathonforchild.Activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
