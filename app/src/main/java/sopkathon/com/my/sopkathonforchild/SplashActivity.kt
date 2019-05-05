@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.support.v4.os.HandlerCompat.postDelayed
-import sopkathon.com.my.sopkathonforchild.Network.LoginActivity
+import sopkathon.com.my.sopkathonforchild.Activity.LoginActivity
+
 
 
 class SplashActivity : AppCompatActivity() {

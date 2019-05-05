@@ -1,10 +1,13 @@
 package sopkathon.com.my.sopkathonforchild.Activity
 
+import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.view.LayoutInflater
+import android.view.View
 import kotlinx.android.synthetic.main.activity_result.*
 import sopkathon.com.my.sopkathonforchild.Adapter.QuestionListAdapter
 import sopkathon.com.my.sopkathonforchild.Data.Question
@@ -16,6 +19,7 @@ class ResultActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result)
+
 
         var dataList: ArrayList<Question> = ArrayList()
         dataList.add(Question(
@@ -30,6 +34,8 @@ class ResultActivity : AppCompatActivity() {
 
         questionListAdapter= QuestionListAdapter(this,dataList)
         rv_question_all.adapter=questionListAdapter
+
+
 
         val lm = LinearLayoutManager(this)
         rv_question_all.layoutManager = lm

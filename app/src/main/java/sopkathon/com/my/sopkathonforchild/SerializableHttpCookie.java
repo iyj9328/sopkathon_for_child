@@ -24,7 +24,7 @@ public class SerializableHttpCookie implements Serializable {
         return bestCookie;
     }
 
-    private void writeObject(ObjectOutputStream out) throws IOException {
+    private void writeObject(ObjectOutputStream out) throws IOException { //직렬화 수행
         out.writeObject(cookie.getName());
         out.writeObject(cookie.getValue());
         out.writeObject(cookie.getComment());
@@ -38,7 +38,7 @@ public class SerializableHttpCookie implements Serializable {
         out.writeBoolean(cookie.getDiscard());
     }
 
-    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException {
+    private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { //직렬화 원래대로 되돌림
         String name = (String) in.readObject();
         String value = (String) in.readObject();
         clientCookie = new HttpCookie(name, value);
