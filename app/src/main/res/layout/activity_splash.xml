@@ -4,22 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#f7f7f7"
+   >
 
     <ImageView
         android:id="@+id/image"
         android:src="@drawable/logo"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="100dp"
         android:layout_centerInParent="true"
         />
     <TextView
         android:id="@+id/text"
         android:textColor="#000000"
         android:gravity="center"
-        android:text="applicationname"
+        android:text="퀴즈대마왕을 이겨라!"
         android:layout_below="@id/image"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image2"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:src="@drawable/character"/>
 </RelativeLayout>
 
